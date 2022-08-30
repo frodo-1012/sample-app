@@ -14,6 +14,7 @@ spec:
     app: test
 
   ports:
+    - protocol: TCP
     # Three types of ports for a service
     # nodePort - a static port assigned on each the node
     # port - port exposed internally in the cluster
