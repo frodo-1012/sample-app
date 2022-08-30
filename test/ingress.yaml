@@ -5,7 +5,7 @@ metadata:
   namespace: test
   labels:
     app: argocd-rollout
-    test: test2
+    test: test22
     argocd.argoproj.io/instance: dev-test-rollout
 spec:
   rules:
