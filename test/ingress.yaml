@@ -4,15 +4,13 @@ metadata:
   name: test
   namespace: test
   labels:
-    app: argocd-rollout
     test: test22
-    argocd.argoproj.io/instance: dev-test-rollout
 spec:
   rules:
-    - host:
+    - host: test.com
       http:
         paths:
-          - path: /*
+          - path: /
             backend:
               serviceName: test
               servicePort: 80
