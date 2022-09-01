@@ -4,8 +4,7 @@ namespace: test
 commonLabels:
   app: sample-app
 resources:
-# - deployment.yaml
-# - ingress.yaml
-# - service.yaml
-# - ingress-tmp.yaml
-- code/*.yaml
+- deployment.yaml
+- ingress.yaml
+- service.yaml
+- ingress-tmp.yaml
