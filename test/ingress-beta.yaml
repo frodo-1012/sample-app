@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test-beta
+  namespace: test
+  labels:
+    test: test-beta
+spec:
+  rules:
+    - host: test.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: test
+              servicePort: 8080
